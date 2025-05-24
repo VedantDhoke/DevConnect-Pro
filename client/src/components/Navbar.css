@@ -1,0 +1,46 @@
+.container {
+  max-width: 140rem;
+  padding: 4.2rem 2.4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  display: flex;
+  gap: 3.2rem;
+}
+/* Dropdown container */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+span{
+  color: #646cff;
+}
+
+/* Hide submenu initially */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: black;
+  list-style: none;
+  padding: 0.5rem 0;
+  border: 1px solid #ccc;
+  min-width: 180px;
+  z-index: 999;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Show submenu on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Submenu items */
+.dropdown-menu li {
+  padding: 0.5rem 1rem;
+}
+
+.dropdown-menu li:hover {
+  background-color: black;
+}
