@@ -10,6 +10,7 @@ import { Footer } from "./components/Footer";
 import { Error } from "./pages/Error";
 import { Logout } from "./pages/Logout";
 import Booking from "./pages/Booking";
+import Testimonials from "./pages/Testimonials";
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/logout" element={<Logout />} />
           <Route path="*" element={<Error />} />
           <Route path="/book-appointment" element={<Booking />} />
+          <Route path="/testimonials" element={<Testimonials />} />
         </Routes>
         <Footer />
       </BrowserRouter>

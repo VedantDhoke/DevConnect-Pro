@@ -19,13 +19,16 @@ export const Navbar = () => {
                 <NavLink to="/">Home</NavLink>
               </li>
               <li className="dropdown">
-                <span>Info</span>
+                <strong className="span">Info</strong>
                 <ul className="dropdown-menu">
                   <li>
                     <NavLink to="/book-appointment">Get Appointment</NavLink>
                   </li>
                   <li>
                     <NavLink to="/about">About Us</NavLink>
+                  </li>
+                  <li>
+                    <NavLink to="/testimonials">Testimonials</NavLink>
                   </li>
                 </ul>
               </li>

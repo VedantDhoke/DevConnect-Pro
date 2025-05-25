@@ -384,3 +384,10 @@ a:active {
   padding: 7px 0 7px 0;
 }
 
+.role{
+  font-weight: 800;
+}
+.role1{
+  font-weight: 600;
+  font-style: italic;
+}

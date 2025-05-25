@@ -14,8 +14,9 @@ ul {
   position: relative;
   cursor: pointer;
 }
-span{
+.span{
   color: #646cff;
+
 }
 
 /* Hide submenu initially */
