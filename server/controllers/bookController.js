@@ -1,5 +1,5 @@
 const nodemailer = require('nodemailer');
-const Booking = require('../models/Booking');
+const Booking = require('../models/booking');
 
 const sendBookingEmail = async (toEmail, subject, htmlContent) => {
   let transporter = nodemailer.createTransport({
