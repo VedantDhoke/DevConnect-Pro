@@ -10,9 +10,12 @@ export const AuthProvider = ({ children }) => {
 
   const getServiceData = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/data/service", {
-        method: "GET",
-      });
+      const response = await fetch(
+        "https://devconnect-pro-1.onrender.com/api/data/service",
+        {
+          method: "GET",
+        }
+      );
       if (response.ok) {
         const services = await response.json();
         setServices(services.data);
@@ -24,12 +27,15 @@ export const AuthProvider = ({ children }) => {
 
   const userAuthentication = async () => {
     try {
-      const response = await fetch("http://localhost:5000/api/auth/user", {
-        method: "GET",
-        headers: {
-          Authorization: `Bearer ${token}`,
-        },
-      });
+      const response = await fetch(
+        "https://devconnect-pro-1.onrender.com/api/auth/user",
+        {
+          method: "GET",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
 
       if (response.ok) {
         const data = await response.json();
